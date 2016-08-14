@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C1653231CD51AE300B41BBA /* VideoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1653221CD51AE300B41BBA /* VideoDetailsViewController.m */; };
+		8C2285401CBE1F2900E7B6A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C22853F1CBE1F2900E7B6A7 /* main.m */; };
+		8C2285431CBE1F2900E7B6A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2285421CBE1F2900E7B6A7 /* AppDelegate.m */; };
+		8C2285461CBE1F2900E7B6A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2285451CBE1F2900E7B6A7 /* ViewController.m */; };
+		8C2285491CBE1F2900E7B6A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2285471CBE1F2900E7B6A7 /* Main.storyboard */; };
+		8C22854B1CBE1F2900E7B6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C22854A1CBE1F2900E7B6A7 /* Assets.xcassets */; };
+		8C22854E1CBE1F2900E7B6A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C22854C1CBE1F2900E7B6A7 /* LaunchScreen.storyboard */; };
+		8C2285591CBE1F2900E7B6A7 /* myVedioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2285581CBE1F2900E7B6A7 /* myVedioTests.m */; };
+		8C2285641CBE1F2A00E7B6A7 /* myVedioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2285631CBE1F2A00E7B6A7 /* myVedioUITests.m */; };
+		8C2285721CBE1FFB00E7B6A7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2285711CBE1FFB00E7B6A7 /* MobileCoreServices.framework */; };
+		8C2285741CBE22F100E7B6A7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2285731CBE22F100E7B6A7 /* MediaPlayer.framework */; };
+		8C2285761CBE285700E7B6A7 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2285751CBE285700E7B6A7 /* AVKit.framework */; };
+		8C22857B1CBE3DCD00E7B6A7 /* Icon-22x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C2285771CBE3DCD00E7B6A7 /* Icon-22x29.png */; };
+		8C22857C1CBE3DCD00E7B6A7 /* Icon-44x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C2285781CBE3DCD00E7B6A7 /* Icon-44x58.png */; };
+		8C22857D1CBE3DCD00E7B6A7 /* Icon-64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C2285791CBE3DCD00E7B6A7 /* Icon-64x64.png */; };
+		8C22857E1CBE3DCD00E7B6A7 /* Icon-320x320.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C22857A1CBE3DCD00E7B6A7 /* Icon-320x320.png */; };
+		8C2285831CBE660400E7B6A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2285821CBE660400E7B6A7 /* CFNetwork.framework */; };
+		8C597BDC1CD3A79500533BDC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C597BDB1CD3A79500533BDC /* LoginViewController.m */; };
+		8C597BED1CD3CFC300533BDC /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C597BEC1CD3CFC300533BDC /* Photos.framework */; };
+		8C597BF01CD5082000533BDC /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C597BEF1CD5082000533BDC /* Video.m */; };
+		8C84DFDD1CD6119400BA9047 /* AppointmentsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84DFDC1CD6119400BA9047 /* AppointmentsListViewController.m */; };
+		8C84DFE01CD6131700BA9047 /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84DFDF1CD6131700BA9047 /* Appointment.m */; };
+		8C84DFE21CD6262000BA9047 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C84DFE11CD6262000BA9047 /* SystemConfiguration.framework */; };
+		8C84DFE51CD6270500BA9047 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84DFE41CD6270500BA9047 /* Reachability.m */; };
+		8C84DFE81CDCF29C00BA9047 /* AllAppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84DFE71CDCF29C00BA9047 /* AllAppointmentsViewController.m */; };
+		8C84DFEA1CDCF65000BA9047 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C84DFE91CDCF65000BA9047 /* videos.png */; };
+		8C84DFED1CDCF8FA00BA9047 /* appointments.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C84DFEB1CDCF8FA00BA9047 /* appointments.png */; };
+		8C84DFEE1CDCF8FA00BA9047 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C84DFEC1CDCF8FA00BA9047 /* video.png */; };
+		8D7208553D9A626EDEA5BA03 /* libPods-myVedio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4D8BEB0DD00BF8C123EA0F /* libPods-myVedio.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C2285551CBE1F2900E7B6A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2285331CBE1F2900E7B6A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C22853A1CBE1F2900E7B6A7;
+			remoteInfo = myVedio;
+		};
+		8C2285601CBE1F2A00E7B6A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2285331CBE1F2900E7B6A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C22853A1CBE1F2900E7B6A7;
+			remoteInfo = myVedio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AF765E92BDE922859C38B52 /* Pods-myVedio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myVedio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myVedio/Pods-myVedio.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1653211CD51AE300B41BBA /* VideoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailsViewController.h; sourceTree = "<group>"; };
+		8C1653221CD51AE300B41BBA /* VideoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailsViewController.m; sourceTree = "<group>"; };
+		8C22853B1CBE1F2900E7B6A7 /* myVedio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myVedio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C22853F1CBE1F2900E7B6A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C2285411CBE1F2900E7B6A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C2285421CBE1F2900E7B6A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C2285441CBE1F2900E7B6A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8C2285451CBE1F2900E7B6A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C2285481CBE1F2900E7B6A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C22854A1CBE1F2900E7B6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C22854D1CBE1F2900E7B6A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C22854F1CBE1F2900E7B6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C2285541CBE1F2900E7B6A7 /* myVedioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myVedioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2285581CBE1F2900E7B6A7 /* myVedioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myVedioTests.m; sourceTree = "<group>"; };
+		8C22855A1CBE1F2900E7B6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C22855F1CBE1F2A00E7B6A7 /* myVedioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myVedioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2285631CBE1F2A00E7B6A7 /* myVedioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myVedioUITests.m; sourceTree = "<group>"; };
+		8C2285651CBE1F2A00E7B6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C2285711CBE1FFB00E7B6A7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8C2285731CBE22F100E7B6A7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8C2285751CBE285700E7B6A7 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		8C2285771CBE3DCD00E7B6A7 /* Icon-22x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-22x29.png"; sourceTree = "<group>"; };
+		8C2285781CBE3DCD00E7B6A7 /* Icon-44x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-44x58.png"; sourceTree = "<group>"; };
+		8C2285791CBE3DCD00E7B6A7 /* Icon-64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-64x64.png"; sourceTree = "<group>"; };
+		8C22857A1CBE3DCD00E7B6A7 /* Icon-320x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-320x320.png"; sourceTree = "<group>"; };
+		8C2285821CBE660400E7B6A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8C597BDA1CD3A79500533BDC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8C597BDB1CD3A79500533BDC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8C597BEC1CD3CFC300533BDC /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		8C597BEE1CD5082000533BDC /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		8C597BEF1CD5082000533BDC /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		8C84DFDB1CD6119400BA9047 /* AppointmentsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentsListViewController.h; sourceTree = "<group>"; };
+		8C84DFDC1CD6119400BA9047 /* AppointmentsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentsListViewController.m; sourceTree = "<group>"; };
+		8C84DFDE1CD6131700BA9047 /* Appointment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appointment.h; sourceTree = "<group>"; };
+		8C84DFDF1CD6131700BA9047 /* Appointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appointment.m; sourceTree = "<group>"; };
+		8C84DFE11CD6262000BA9047 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8C84DFE31CD6270500BA9047 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8C84DFE41CD6270500BA9047 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8C84DFE61CDCF29C00BA9047 /* AllAppointmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAppointmentsViewController.h; sourceTree = "<group>"; };
+		8C84DFE71CDCF29C00BA9047 /* AllAppointmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAppointmentsViewController.m; sourceTree = "<group>"; };
+		8C84DFE91CDCF65000BA9047 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videos.png; sourceTree = "<group>"; };
+		8C84DFEB1CDCF8FA00BA9047 /* appointments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appointments.png; sourceTree = "<group>"; };
+		8C84DFEC1CDCF8FA00BA9047 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		92A06CF487CAD56C80B6B06E /* Pods-myVedio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myVedio.release.xcconfig"; path = "Pods/Target Support Files/Pods-myVedio/Pods-myVedio.release.xcconfig"; sourceTree = "<group>"; };
+		AE4D8BEB0DD00BF8C123EA0F /* libPods-myVedio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myVedio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C2285381CBE1F2900E7B6A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C84DFE21CD6262000BA9047 /* SystemConfiguration.framework in Frameworks */,
+				8C597BED1CD3CFC300533BDC /* Photos.framework in Frameworks */,
+				8C2285831CBE660400E7B6A7 /* CFNetwork.framework in Frameworks */,
+				8C2285761CBE285700E7B6A7 /* AVKit.framework in Frameworks */,
+				8C2285741CBE22F100E7B6A7 /* MediaPlayer.framework in Frameworks */,
+				8C2285721CBE1FFB00E7B6A7 /* MobileCoreServices.framework in Frameworks */,
+				8D7208553D9A626EDEA5BA03 /* libPods-myVedio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2285511CBE1F2900E7B6A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C22855C1CBE1F2A00E7B6A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AF92F3A3A338F3F04FEBD40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AF765E92BDE922859C38B52 /* Pods-myVedio.debug.xcconfig */,
+				92A06CF487CAD56C80B6B06E /* Pods-myVedio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C2285321CBE1F2900E7B6A7 = {
+			isa = PBXGroup;
+			children = (
+				8C84DFE11CD6262000BA9047 /* SystemConfiguration.framework */,
+				8C597BEC1CD3CFC300533BDC /* Photos.framework */,
+				8C2285821CBE660400E7B6A7 /* CFNetwork.framework */,
+				8C2285751CBE285700E7B6A7 /* AVKit.framework */,
+				8C2285731CBE22F100E7B6A7 /* MediaPlayer.framework */,
+				8C2285711CBE1FFB00E7B6A7 /* MobileCoreServices.framework */,
+				8C22853D1CBE1F2900E7B6A7 /* myVedio */,
+				8C2285571CBE1F2900E7B6A7 /* myVedioTests */,
+				8C2285621CBE1F2A00E7B6A7 /* myVedioUITests */,
+				8C22853C1CBE1F2900E7B6A7 /* Products */,
+				7AF92F3A3A338F3F04FEBD40 /* Pods */,
+				AFBF06C16DFB40BAEC89DD30 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C22853C1CBE1F2900E7B6A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C22853B1CBE1F2900E7B6A7 /* myVedio.app */,
+				8C2285541CBE1F2900E7B6A7 /* myVedioTests.xctest */,
+				8C22855F1CBE1F2A00E7B6A7 /* myVedioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C22853D1CBE1F2900E7B6A7 /* myVedio */ = {
+			isa = PBXGroup;
+			children = (
+				8C2285411CBE1F2900E7B6A7 /* AppDelegate.h */,
+				8C2285421CBE1F2900E7B6A7 /* AppDelegate.m */,
+				8C597BDA1CD3A79500533BDC /* LoginViewController.h */,
+				8C597BDB1CD3A79500533BDC /* LoginViewController.m */,
+				8C2285441CBE1F2900E7B6A7 /* ViewController.h */,
+				8C2285451CBE1F2900E7B6A7 /* ViewController.m */,
+				8C597BEE1CD5082000533BDC /* Video.h */,
+				8C597BEF1CD5082000533BDC /* Video.m */,
+				8C1653211CD51AE300B41BBA /* VideoDetailsViewController.h */,
+				8C1653221CD51AE300B41BBA /* VideoDetailsViewController.m */,
+				8C84DFDE1CD6131700BA9047 /* Appointment.h */,
+				8C84DFDF1CD6131700BA9047 /* Appointment.m */,
+				8C84DFDB1CD6119400BA9047 /* AppointmentsListViewController.h */,
+				8C84DFDC1CD6119400BA9047 /* AppointmentsListViewController.m */,
+				8C84DFE61CDCF29C00BA9047 /* AllAppointmentsViewController.h */,
+				8C84DFE71CDCF29C00BA9047 /* AllAppointmentsViewController.m */,
+				8C2285471CBE1F2900E7B6A7 /* Main.storyboard */,
+				8C22854A1CBE1F2900E7B6A7 /* Assets.xcassets */,
+				8C22854C1CBE1F2900E7B6A7 /* LaunchScreen.storyboard */,
+				8C22854F1CBE1F2900E7B6A7 /* Info.plist */,
+				8C22853E1CBE1F2900E7B6A7 /* Supporting Files */,
+			);
+			path = myVedio;
+			sourceTree = "<group>";
+		};
+		8C22853E1CBE1F2900E7B6A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C84DFEB1CDCF8FA00BA9047 /* appointments.png */,
+				8C84DFEC1CDCF8FA00BA9047 /* video.png */,
+				8C84DFE91CDCF65000BA9047 /* videos.png */,
+				8C84DFE31CD6270500BA9047 /* Reachability.h */,
+				8C84DFE41CD6270500BA9047 /* Reachability.m */,
+				8C2285771CBE3DCD00E7B6A7 /* Icon-22x29.png */,
+				8C2285781CBE3DCD00E7B6A7 /* Icon-44x58.png */,
+				8C2285791CBE3DCD00E7B6A7 /* Icon-64x64.png */,
+				8C22857A1CBE3DCD00E7B6A7 /* Icon-320x320.png */,
+				8C22853F1CBE1F2900E7B6A7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C2285571CBE1F2900E7B6A7 /* myVedioTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C2285581CBE1F2900E7B6A7 /* myVedioTests.m */,
+				8C22855A1CBE1F2900E7B6A7 /* Info.plist */,
+			);
+			path = myVedioTests;
+			sourceTree = "<group>";
+		};
+		8C2285621CBE1F2A00E7B6A7 /* myVedioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C2285631CBE1F2A00E7B6A7 /* myVedioUITests.m */,
+				8C2285651CBE1F2A00E7B6A7 /* Info.plist */,
+			);
+			path = myVedioUITests;
+			sourceTree = "<group>";
+		};
+		AFBF06C16DFB40BAEC89DD30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D8BEB0DD00BF8C123EA0F /* libPods-myVedio.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C22853A1CBE1F2900E7B6A7 /* myVedio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2285681CBE1F2A00E7B6A7 /* Build configuration list for PBXNativeTarget "myVedio" */;
+			buildPhases = (
+				AA42EC6B0B107F1134E636D2 /* Check Pods Manifest.lock */,
+				8C2285371CBE1F2900E7B6A7 /* Sources */,
+				8C2285381CBE1F2900E7B6A7 /* Frameworks */,
+				8C2285391CBE1F2900E7B6A7 /* Resources */,
+				FBBEAC5797FED38A63B70B00 /* Embed Pods Frameworks */,
+				FB7135EBFE9121A4173F432A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myVedio;
+			productName = myVedio;
+			productReference = 8C22853B1CBE1F2900E7B6A7 /* myVedio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C2285531CBE1F2900E7B6A7 /* myVedioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C22856B1CBE1F2A00E7B6A7 /* Build configuration list for PBXNativeTarget "myVedioTests" */;
+			buildPhases = (
+				8C2285501CBE1F2900E7B6A7 /* Sources */,
+				8C2285511CBE1F2900E7B6A7 /* Frameworks */,
+				8C2285521CBE1F2900E7B6A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C2285561CBE1F2900E7B6A7 /* PBXTargetDependency */,
+			);
+			name = myVedioTests;
+			productName = myVedioTests;
+			productReference = 8C2285541CBE1F2900E7B6A7 /* myVedioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C22855E1CBE1F2A00E7B6A7 /* myVedioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C22856E1CBE1F2A00E7B6A7 /* Build configuration list for PBXNativeTarget "myVedioUITests" */;
+			buildPhases = (
+				8C22855B1CBE1F2A00E7B6A7 /* Sources */,
+				8C22855C1CBE1F2A00E7B6A7 /* Frameworks */,
+				8C22855D1CBE1F2A00E7B6A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C2285611CBE1F2A00E7B6A7 /* PBXTargetDependency */,
+			);
+			name = myVedioUITests;
+			productName = myVedioUITests;
+			productReference = 8C22855F1CBE1F2A00E7B6A7 /* myVedioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C2285331CBE1F2900E7B6A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Rawan;
+				TargetAttributes = {
+					8C22853A1CBE1F2900E7B6A7 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = WKRCK9V34F;
+					};
+					8C2285531CBE1F2900E7B6A7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8C22853A1CBE1F2900E7B6A7;
+					};
+					8C22855E1CBE1F2A00E7B6A7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8C22853A1CBE1F2900E7B6A7;
+					};
+				};
+			};
+			buildConfigurationList = 8C2285361CBE1F2900E7B6A7 /* Build configuration list for PBXProject "myVedio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C2285321CBE1F2900E7B6A7;
+			productRefGroup = 8C22853C1CBE1F2900E7B6A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C22853A1CBE1F2900E7B6A7 /* myVedio */,
+				8C2285531CBE1F2900E7B6A7 /* myVedioTests */,
+				8C22855E1CBE1F2A00E7B6A7 /* myVedioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C2285391CBE1F2900E7B6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C84DFED1CDCF8FA00BA9047 /* appointments.png in Resources */,
+				8C22854E1CBE1F2900E7B6A7 /* LaunchScreen.storyboard in Resources */,
+				8C22854B1CBE1F2900E7B6A7 /* Assets.xcassets in Resources */,
+				8C84DFEE1CDCF8FA00BA9047 /* video.png in Resources */,
+				8C22857E1CBE3DCD00E7B6A7 /* Icon-320x320.png in Resources */,
+				8C22857B1CBE3DCD00E7B6A7 /* Icon-22x29.png in Resources */,
+				8C22857D1CBE3DCD00E7B6A7 /* Icon-64x64.png in Resources */,
+				8C2285491CBE1F2900E7B6A7 /* Main.storyboard in Resources */,
+				8C22857C1CBE3DCD00E7B6A7 /* Icon-44x58.png in Resources */,
+				8C84DFEA1CDCF65000BA9047 /* videos.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2285521CBE1F2900E7B6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C22855D1CBE1F2A00E7B6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA42EC6B0B107F1134E636D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7135EBFE9121A4173F432A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myVedio/Pods-myVedio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBBEAC5797FED38A63B70B00 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myVedio/Pods-myVedio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C2285371CBE1F2900E7B6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C84DFE01CD6131700BA9047 /* Appointment.m in Sources */,
+				8C2285461CBE1F2900E7B6A7 /* ViewController.m in Sources */,
+				8C84DFDD1CD6119400BA9047 /* AppointmentsListViewController.m in Sources */,
+				8C84DFE51CD6270500BA9047 /* Reachability.m in Sources */,
+				8C84DFE81CDCF29C00BA9047 /* AllAppointmentsViewController.m in Sources */,
+				8C2285431CBE1F2900E7B6A7 /* AppDelegate.m in Sources */,
+				8C597BF01CD5082000533BDC /* Video.m in Sources */,
+				8C2285401CBE1F2900E7B6A7 /* main.m in Sources */,
+				8C597BDC1CD3A79500533BDC /* LoginViewController.m in Sources */,
+				8C1653231CD51AE300B41BBA /* VideoDetailsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2285501CBE1F2900E7B6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2285591CBE1F2900E7B6A7 /* myVedioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C22855B1CBE1F2A00E7B6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2285641CBE1F2A00E7B6A7 /* myVedioUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C2285561CBE1F2900E7B6A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C22853A1CBE1F2900E7B6A7 /* myVedio */;
+			targetProxy = 8C2285551CBE1F2900E7B6A7 /* PBXContainerItemProxy */;
+		};
+		8C2285611CBE1F2A00E7B6A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C22853A1CBE1F2900E7B6A7 /* myVedio */;
+			targetProxy = 8C2285601CBE1F2A00E7B6A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C2285471CBE1F2900E7B6A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C2285481CBE1F2900E7B6A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C22854C1CBE1F2900E7B6A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C22854D1CBE1F2900E7B6A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C2285661CBE1F2A00E7B6A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C2285671CBE1F2A00E7B6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C2285691CBE1F2A00E7B6A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF765E92BDE922859C38B52 /* Pods-myVedio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = myVedio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rawan.Appointment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C22856A1CBE1F2A00E7B6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A06CF487CAD56C80B6B06E /* Pods-myVedio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = myVedio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rawan.Appointment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C22856C1CBE1F2A00E7B6A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = myVedioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rawan.myVedioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myVedio.app/myVedio";
+			};
+			name = Debug;
+		};
+		8C22856D1CBE1F2A00E7B6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = myVedioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rawan.myVedioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myVedio.app/myVedio";
+			};
+			name = Release;
+		};
+		8C22856F1CBE1F2A00E7B6A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myVedioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rawan.myVedioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = myVedio;
+			};
+			name = Debug;
+		};
+		8C2285701CBE1F2A00E7B6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myVedioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rawan.myVedioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = myVedio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C2285361CBE1F2900E7B6A7 /* Build configuration list for PBXProject "myVedio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2285661CBE1F2A00E7B6A7 /* Debug */,
+				8C2285671CBE1F2A00E7B6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C2285681CBE1F2A00E7B6A7 /* Build configuration list for PBXNativeTarget "myVedio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2285691CBE1F2A00E7B6A7 /* Debug */,
+				8C22856A1CBE1F2A00E7B6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C22856B1CBE1F2A00E7B6A7 /* Build configuration list for PBXNativeTarget "myVedioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C22856C1CBE1F2A00E7B6A7 /* Debug */,
+				8C22856D1CBE1F2A00E7B6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C22856E1CBE1F2A00E7B6A7 /* Build configuration list for PBXNativeTarget "myVedioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C22856F1CBE1F2A00E7B6A7 /* Debug */,
+				8C2285701CBE1F2A00E7B6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C2285331CBE1F2900E7B6A7 /* Project object */;
+}
